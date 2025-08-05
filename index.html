@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <!--html, envolve todo o conteúdo da pagina incluindo o <head> e o <body>.-->
 
 <head>
     <meta charset="UTF-8">
+    <!--meta, fornecer metadados, infomações sobre a pagina, e não sobre o conteúdo visivel dela.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de senha</title>
+    <!--title, definir o titulo da pagina, aparece na aba do navegador, nos resultados do google.-->
     <link rel="stylesheet" href="style.css">
+    <!--link, ligar a página a recursos externos, como arquivos do css,ícone da aba, fontes.-->
 </head>
-
+<!--head, seção especial ficam infomações sobre a página, nao aparecem diretamente no conteúdo visivel.-->
 <body>
+    <!--body, a parte do codigo onde fica o conteúdo visivel da página. -->
     <section class="conteudo">
+        <!--section class, seção (parte da página) dando a ela um nome com a class pode estilizar ou identificar.-->
         <div class="conteudo-titulo">
+            <!--div class, criar uma divisão na pagina e dar um nome a ela com class.-->
             <img src="unlock.svg" alt="cadeado fechado">
+            <!--img src, inserir uma i8magem na pagina.-->
             <h2 class="titulo-principal">Gerador de senhas</h2>
+            <!--h1 class, criar um subtítulo e dar um nome para ele com class podendo ir do h1 ao h5.-->
             <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+            <!--label, para rotular elementos de formulario(campos de entrada,caixa de seleção,botões de opção).-->
         </div>
+        <!--div, é uma "caixa" ou um "bloco" genérico para agrupar outros elementos html.-->
         <div class="conteudo-senha">
             <label for="senha">Senha</label>
+            <!--label, para rotular elementos de formulario(campos de entrada,caixa de seleção,botões de opção).-->
             <input name="senha" type="text" id="campo-senha">
+            <!--input, criar campos onde o usuário pode inserir dados, em um fomuluario,como textos,senhas e numeros.-->
         </div>
         <div class="parametro">
             <h3 class="parametro-titulo">Personalize sua senha</h3>
@@ -26,7 +39,9 @@
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
                     <div class="parametro-senha-botoes">
                         <button class="parametro-senha__botao">-</button>
+                        <!--button, criar botões clicaveis que podem executar ações, ativar scripts.-->
                         <p class="parametro-senha__texto">12</p>
+                        <!--P class, para identificar esse parágrafo com nome(classe).-->
                         <button class="parametro-senha__botao">+</button>
                     </div>
                     <div class="parametro-senha">
@@ -42,7 +57,8 @@
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Força da senha</h4>
                 </div>
-                 </div>
+
+                </div>
                     <div class="parametro-senha-checkbox">
                         <input name="minusculo" type="checkbox" class="checkbox">
                         <label for="minusculo">Letras minúsculas</label>
@@ -55,7 +71,7 @@
                         <input name="simbolo" type="checkbox" class="checkbox">
                         <label for="simbolo">Símbolos</label>
                     </div>
-</div>
+                     </div>
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Força da senha</h4>
                     <div class="barra"></div>
@@ -64,9 +80,15 @@
                         <p>Fraca</p>
                         <p>Média</p>
                         <p>Forte</p>
+                    </div>
+                  <p class="entropia"></p>
             </div>
         </div>
     </section>
+    <!--section, dividir o conteúdo da página em blocos organizados por tema ou função.-->
+     <script src="main.js"></script>
+     <!--script, insrir código JavaScript na página.-->
 </body>
 
 </html>
+
